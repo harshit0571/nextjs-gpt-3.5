@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/test.js": {
-      "maxDuration": 60
+      "maxDuration": 10
     }
   }
 }
