@@ -34,7 +34,7 @@ export default function Home() {
     client
       .post("api/openai", JSON.stringify(params))
       .then((result) => {
-        setResponse(result);
+        setResponse(result.data.text);
       })
       .catch((error) => {
         console.log(error);
@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <main>
-      <div>{Response.data.text}</div>
+      <div>{Response}</div>
     </main>
   );
 }
